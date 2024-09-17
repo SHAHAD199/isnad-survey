@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'CustomFont'
+}
+
+@font-face {
+    font-family: 'CustomFont'; /* Name your font family */
+    src: url('/font/FFShamelFamily-SansOneBook.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+@font-face {
+    font-family: 'CustomFontBold'; /* Name your font family */
+    src: url('/font/FFShamelFamily-SansOneBold.ttf'); /* Locate the .ttf file within your directory*/
+}
+
+body {
+    direction: rtl;
+    background-color: #01233d;
+    font-family: 'CustomFont';
+    text-align: right;
+}
+
+.header_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #c8c9c7;
+    /* padding:3%; */
+    margin-bottom: 30px;
+}
+main {
+    padding: 29px;
+}
+.header_div .logo-div {
+    width:60px;
+    height: 80px;
+}
+.header_div .logo-div img {
+    width:100%;
+    height: 100%;
+}
+.header_div .linktree-div a {
+    color: #c8c9c7;
+    font-size: 20px;
+}
+
+.text-div {
+    /* padding: 0 5%; */
+    margin-top: 40px;
+    line-height: 28px;
+    text-align: right;
+}
+.text-div p {
+    color:#c8c9c7;
+    font-size: 14px;
+}
+
+.button_div  {
+    /* padding: 0 5%; */
+    margin-top: 55px;
+    text-align: right;
+}
+.button_div a {
+    color:#d8af5d;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.text-div p{
+    font-size: 14px;
+    color: #c8c9c7;
+}
+
+.form_content_div .input_div
+{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    color: #c8c9c7;
+    margin: 22px auto;
+
+}
+.form_content_div .input_div label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.main-label {
+    color:#e0bf7d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form_content_div .input_div input,
+.form_content_div .input_div textarea,
+.form_content_div .input_div select {
+    width:100%;
+    height:38px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 0.02px solid #c8c9c7 ;
+    outline: none;
+    color:#c8c9c7;
+    padding-right: 19px;
+}
+
+.form_content_div .input_div input[type='date']::placeholder  {
+    background-color:#c8c9c7 !important;
+}
+.form_content_div .input_div textarea {
+    height: 150px;
+}
+.form_content_div .input_div select option {
+    color: #01233d;
+    font-size: 16px;
+}
+
+.radio-input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.radio-input-div input[type='radio'],
+.radio-input-div input[type='checkbox']
+{
+    width: 12px;
+    height: 12px;
+    margin-left:8px;
+    border: none !important;
+    outline: none !important;
+}
+.radio-input-div input[type='radio']:hover,
+.radio-input-div input[type='radio']:checked,
+.radio-input-div input[type='radio']:focus,
+
+.radio-input-div input[type='checkbox']:hover,
+.radio-input-div input[type='checkbox']:checked,
+.radio-input-div input[type='checkbox']:focus
+
+{
+    background-color: #d8af5d !important;
+    border-color: #d8af5d !important;
+    border-color: #d8af5d !important;
+    accent-color: #d8af5d !important;
+    outline: none !important;
+}
+hr {
+    /* border-top: .03px solid #c8c9c7 !important; */
+    margin-top: 14px;
+    border-color: #888;
+    border-width: .2px !important;
+}
+
+.input_div button {
+    height: 38px;
+    width:120px;
+    background-color: #d8af5d;
+    color: #01233d;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.error {
+    color: #d8af5d;
+    margin-right: 15px;
+}
+
+.main-label.error-input {
+    border-color:  #d8af5d !important;
+}
+
+
+.logo-done-div {
+ 
+    /* width: 100px;
+    height: 120px; */
+    margin-top: 60px;
+    text-align: center;
+}
+.logo-done-div img {
+    width:100px;
+    height: 120px;
+
+}
+.text-done-div {
+    margin-top: 50px;
+    width:100%;
+    color: #d8af5d;
+    font-size: 32px;
+
+}
+.text-done-div , .info-done 
+{
+    text-align: center;
+}
+.info-done {
+    margin-top: 50px;
+    color: #c8c9c7;
+}
+
+.info-done span {
+    color: #d8af5d;
+}
+.info-done span i {
+    margin-right: 8px;
+}
+
+.info-done p {
+    line-height: 3;
+}
+
+.back-div {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.back-div a {
+    text-decoration: none;
+    color: #c8c9c7;
+    transition: 1s;
+}
+
+.back-div a:hover {
+    color: #d8af5d;
+
+}
+.back-div a i {
+    margin-right :5px;
+}
